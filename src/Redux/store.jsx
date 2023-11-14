@@ -5,10 +5,12 @@ import storage from 'redux-persist/lib/storage';
 import userReducer from './users/user.reducer';
 import { movieReducer } from './contacts/contacts.reducer';
 
+
 const rootReducer = combineReducers({
   userReducer: userReducer,
   movieReducer: movieReducer
 });
+
 
 const persistConfig = {
   key: 'root',
