@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+
 import {
   Box,
   Center,
@@ -36,7 +37,8 @@ function ContactCard({title,body}) {
   const [temptitle, setTitle] = useState(title)
    
     const [tempbody, setBody] = useState(body)
-    const updateContacts = () => {
+
+  const updateContacts = () => {
         dispatch(updateContacts(_id,{title:temptitle,body:tempbody,}))
         onClose()
     }
@@ -54,6 +56,7 @@ function ContactCard({title,body}) {
          
         >
         <Stack>
+
           <Heading
             fontSize={'2xl'}
             fontFamily={'body'}>

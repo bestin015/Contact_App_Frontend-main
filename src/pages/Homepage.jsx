@@ -2,6 +2,8 @@ import React from 'react'
 import { Box, Button, Text,Image, Flex } from '@chakra-ui/react'
 import { Heading } from '@chakra-ui/react'
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom'
+
+
 function Homepage() {
     const nav = useNavigate()
     

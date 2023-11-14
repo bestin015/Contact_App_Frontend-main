@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+
 import {
   Box,
   Center,
@@ -33,7 +34,8 @@ function ContactCard({title,image,body,rating,user,_id}) {
   const finalRef = useRef(null)
   const [temptitle, setTitle] = useState(title)
     const [tempimage, setImage] = useState(image)
-    const [tempbody, setBody] = useState(body)
+
+  const [tempbody, setBody] = useState(body)
     const [temprating, setRating] = useState(rating)
        const updateContact = () => {
         dispatch(updateContacts(_id,{title:temptitle,body:tempbody,image:tempimage,rating:temprating}))
@@ -113,10 +115,7 @@ function ContactCard({title,image,body,rating,user,_id}) {
     </>
 
 
-
-
-
-        <Button onClick={()=>
+<Button onClick={()=>
       dispatch(deleteContacts(_id))  
       }>
       Delete</Button>
