@@ -25,6 +25,8 @@ function LoginPage() {
     if(auth){
         nav("/Contacts")
     }
+
+
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [showPassword, setShowPassword] = useState(false)
@@ -58,7 +60,8 @@ function LoginPage() {
                 </InputRightElement>
               </InputGroup>
             </FormControl>
-          <Stack spacing={6}>
+
+             <Stack spacing={6}>
             <Stack
               direction={{ base: 'column', sm: 'row' }}
               align={'start'}
